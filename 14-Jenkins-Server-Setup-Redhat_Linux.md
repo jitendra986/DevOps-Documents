@@ -22,7 +22,8 @@ yum repolist enabled
 sudo yum list available | grep openjdk
 ## RHEL 10 appears to provide only the latest OpenJDK version—Java 21
 sudo yum install java-21-openjdk
-
+## Install git
+sudo yum install git 
 java -version
 ```
 
