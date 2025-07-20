@@ -2,7 +2,7 @@
 
 ## Step - 1 : Create Linux VM ##
 
-1) Create Ubuntu VM using AWS EC2 (t2.medium) <br/>
+1) Create RedHat VM using AWS EC2 (t2.medium) <br/>
 2) Enable 8080 Port Number in Security Group Inbound Rules
 3) Connect to VM using MobaXterm
 
@@ -20,7 +20,7 @@ sudo subscription-manager attach --auto
 yum repolist enabled
 ## This command gives root privileges that allows reading the necessary certificate files
 sudo yum list available | grep openjdk
-## RHEL 10 appears to provide only the latest OpenJDK version—Java 21
+## RHEL 10 appears to provide only the latest OpenJDK versionâ€”Java 21
 sudo yum install java-21-openjdk
 
 java -version
