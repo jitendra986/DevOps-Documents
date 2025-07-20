@@ -11,6 +11,7 @@
 ```
 sudo apt update
 sudo apt install fontconfig openjdk-17-jre
+sudo apt install git
 java -version
 ```
 
