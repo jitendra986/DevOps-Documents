@@ -147,7 +147,10 @@ sudo mv ./kubectl /usr/local/bin
 kubectl version --short --client
 ```
 
-# Step - 10 : Update EKS Cluster Config File in Jenkins Server #
+# Step - 10 : Update EKS Cluster Config File in Jenkins Server i.e. integrating Jenkins and Kubernetes cluster for that we need to take the kubernetes cluster config file and we need to configure that into Jenkins Machine #
+
+Note: why are we doing this it is because my Jenkins machine should communicate with Kubernetes cluster to do the deployment. How the jenkins machine will know where is the kubernetes cluster.
+Cluster configuration we need to update in the Jenkins machine. The cluster configuration will be available in the Kube config file that Kube config file we will keep in the Jenkins machine then Jenkins machine will know where is the kubernetes cluster. Then Jenkins will do the deployment in the kubernetes cluster directly.
 	
 1) Execute below command in Eks Management host & copy kube config file data <br/>
 	$ cat .kube/config 
