@@ -70,3 +70,22 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 	   
 ## Step-8 : Create Admin Account & Install Required Plugins in Jenkins ##
+
+
+### Uninstalling Jenkins from Red Hat VM ###
+
+## Step-9 : To Stop the Jenkins service from Red Hat ##
+```
+sudo systemctl stop jenkins
+
+```
+## Step-10 :  Remove Jenkins using yum ##
+```
+sudo yum remove jenkins
+```
+## Step-11 : Remove Jenkins workspace and configuration ##
+```
+sudo rm -rf /var/lib/jenkins
+```
+
+
