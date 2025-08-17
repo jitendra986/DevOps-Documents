@@ -96,7 +96,11 @@ sudo vi /etc/ansible/hosts
 [dbservers] <br/>
 172.31.44.90
 
-## Step-5: Test Connectivity ##
+## Step-5: Test Connectivity  using ping module##
 ```
 ansible all -m ping
+```
+## Step-5: Test Connectivity using shell module: it will print current date of both the Managed Nodes ##
+```
+ansible all -m shell -a date
 ```
