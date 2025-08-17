@@ -100,7 +100,7 @@ sudo vi /etc/ansible/hosts
 ```
 ansible all -m ping
 ```
-## Step-5: Test Connectivity using shell module: it will print current date of both the Managed Nodes ##
+## Step-6: Test Connectivity using shell module: it will print current date of both the Managed Nodes ##
 ```
 ansible all -m shell -a date
 ```
