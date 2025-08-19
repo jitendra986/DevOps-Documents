@@ -14,7 +14,7 @@ Note: Connect to all 3 VMs using MobaXterm
 sudo useradd ansible
 sudo passwd ansible
 ```
-### b) Configure user in sudoers file ###
+### b) Configure user in sudoers file, the root user is already there just below root user, configure the below command ###
 
 sudo visudo
 
